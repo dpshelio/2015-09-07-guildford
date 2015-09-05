@@ -84,6 +84,12 @@
     $ jekyll server -d _site
     ~~~
 
+    if the above does not work try with:
+
+    ~~~
+    $ bundle exec jekyll serve
+    ~~~
+
     and look at `http://localhost:4000` in your browser
     (or push your changes to GitHub and view your page there).
 
