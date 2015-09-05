@@ -827,3 +827,8 @@ div.chapter h2 {
         margin: 0px 0px;
     }
 }
+
+img[alt=nano] { width: 500px; }
+img[alt=shell] { width: 500px; }
+img[alt=shell_data] { width: 500px; }
+img[alt=python_data] { width: 500px; }

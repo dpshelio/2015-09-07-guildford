@@ -81,8 +81,8 @@ CHECKS = [
 # Testing
     'nosetests',       # Command line tool
     'nose',            # Python package
-    'py.test',         # Command line tool
-    'pytest',          # Python package
+    #'py.test',         # Command line tool
+    #'pytest',          # Python package
 # SQL
     #'sqlite3',         # Command line tool
     #'sqlite3-python',  # Python package
