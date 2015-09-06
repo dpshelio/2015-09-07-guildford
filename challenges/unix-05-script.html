@@ -5,6 +5,7 @@ root: ..
 
 
 <h2>Unix Shell - Shell Scripts</h2>
+
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pencil"></span>Variables in shell scripts</h2>
@@ -24,23 +25,7 @@ tail $3 $1</code></pre>
 </ol>
 </div>
 </section>
-<section class="challenge panel panel-success">
-<div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>List unique species</h2>
-</div>
-<div class="panel-body">
-<p>Leah has several hundred data files, each of which is formatted like this:</p>
-<pre><code>2013-11-05,deer,5
-2013-11-05,rabbit,22
-2013-11-05,raccoon,7
-2013-11-06,rabbit,19
-2013-11-06,deer,2
-2013-11-06,fox,1
-2013-11-07,rabbit,18
-2013-11-07,bear,1</code></pre>
-<p>Write a shell script called <code>species.sh</code> that takes any number of filenames as command-line parameters, and uses <code>cut</code>, <code>sort</code>, and <code>uniq</code> to print a list of the unique species appearing in each of those files separately.</p>
-</div>
-</section>
+
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pencil"></span>Find the longest file with a given extension</h2>
@@ -51,16 +36,7 @@ tail $3 $1</code></pre>
 <p>would print the name of the <code>.pdb</code> file in <code>/tmp/data</code> that has the most lines.</p>
 </div>
 </section>
-<section class="challenge panel panel-success">
-<div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Why record commands in the history before running them?</h2>
-</div>
-<div class="panel-body">
-<p>If you run the command:</p>
-<pre><code>history | tail -5 &gt; recent.sh</code></pre>
-<p>the last command in the file is the <code>history</code> command itself, i.e., the shell has added <code>history</code> to the command log before actually running it. In fact, the shell <em>always</em> adds commands to the log before running them. Why do you think it does this?</p>
-</div>
-</section>
+
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pencil"></span>Script reading comprehension</h2>
@@ -78,3 +54,33 @@ done</code></pre>
 echo $@.dat</code></pre>
 </div>
 </section>
+
+<section class="challenge panel panel-success2">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>List unique species</h2>
+</div>
+<div class="panel-body">
+<p>Leah has several hundred data files, each of which is formatted like this:</p>
+<pre><code>2013-11-05,deer,5
+2013-11-05,rabbit,22
+2013-11-05,raccoon,7
+2013-11-06,rabbit,19
+2013-11-06,deer,2
+2013-11-06,fox,1
+2013-11-07,rabbit,18
+2013-11-07,bear,1</code></pre>
+<p>Write a shell script called <code>species.sh</code> that takes any number of filenames as command-line parameters, and uses <code>cut</code>, <code>sort</code>, and <code>uniq</code> to print a list of the unique species appearing in each of those files separately.</p>
+</div>
+</section>
+
+<section class="challenge panel panel-success2">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Why record commands in the history before running them?</h2>
+</div>
+<div class="panel-body">
+<p>If you run the command:</p>
+<pre><code>history | tail -5 &gt; recent.sh</code></pre>
+<p>the last command in the file is the <code>history</code> command itself, i.e., the shell has added <code>history</code> to the command log before actually running it. In fact, the shell <em>always</em> adds commands to the log before running them. Why do you think it does this?</p>
+</div>
+</section>
+

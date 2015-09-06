@@ -5,6 +5,7 @@ root: ..
 
 
 <h2>Unix Shell - Loops</h2>
+
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pencil"></span>Variables in Loops</h2>
@@ -25,6 +26,7 @@ done</code></pre>
 <p>Why do these two loops give you different outputs?</p>
 </div>
 </section>
+
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pencil"></span>Saving to a File in a Loop - Part One</h2>
@@ -44,6 +46,7 @@ done</code></pre>
 </ol>
 </div>
 </section>
+
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pencil"></span>Saving to a File in a Loop - Part Two</h2>
@@ -64,7 +67,29 @@ done</code></pre>
 </ol>
 </div>
 </section>
+
 <section class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Nested Loops and Command-Line Expressions</h2>
+</div>
+<div class="panel-body">
+<p>The <code>expr</code> does simple arithmetic using command-line parameters:</p>
+<pre><code>$ expr 3 + 5
+8
+$ expr 30 / 5 - 2
+4</code></pre>
+<p>Given this, what is the output of:</p>
+<pre><code>for left in 2 3
+do
+    for right in $left
+    do
+        expr $left + $right
+    done
+done</code></pre>
+</div>
+</section>
+
+<section class="challenge panel panel-success2">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pencil"></span>Doing a Dry Run</h2>
 </div>
@@ -87,23 +112,4 @@ done</code></pre>
 <span class="kw">done</span></code></pre>
 </div>
 </section>
-<section class="challenge panel panel-success">
-<div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Nested Loops and Command-Line Expressions</h2>
-</div>
-<div class="panel-body">
-<p>The <code>expr</code> does simple arithmetic using command-line parameters:</p>
-<pre><code>$ expr 3 + 5
-8
-$ expr 30 / 5 - 2
-4</code></pre>
-<p>Given this, what is the output of:</p>
-<pre><code>for left in 2 3
-do
-    for right in $left
-    do
-        expr $left + $right
-    done
-done</code></pre>
-</div>
-</section>
+
